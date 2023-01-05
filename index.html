@@ -44,14 +44,13 @@
         <label for="exampleFormControlTextarea1" class="form-label"
           >Add Description</label
         >
-        <textarea
-          class="form-control"
-          id="desc"
-          rows="3"
-        ></textarea>
+        <textarea class="form-control" id="desc" rows="3"></textarea>
       </div>
 
       <button type="submit" id="add" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-danger" onclick="TODOclear()">
+        Delete All TODOs
+      </button>
 
       <div id="items" class="my-4">
         <h2>Your TODOS</h2>
@@ -64,18 +63,7 @@
               <th scope="col">Actions</th>
             </tr>
           </thead>
-          <tbody id="tableBody">
-            <!-- <tr>
-              <th scope="row">1</th>
-              <td>Drink Coffee</td>
-              <td>You need Coffee</td>
-              <td>
-                <button type="button" class="btn btn-sm btn-outline-danger">
-                  Delete
-                </button>
-              </td>
-            </tr> -->
-          </tbody>
+          <tbody id="tableBody"></tbody>
         </table>
       </div>
     </div>
